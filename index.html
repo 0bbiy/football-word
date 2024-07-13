@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Word</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Football Word</h1>
+        <div id="word-grid" class="word-grid"></div>
+        <input type="text" id="guess-input" placeholder="Masukkan tebakanmu">
+        <div id="feedback" class="feedback-text"></div>
+        <button id="play-again" style="display: none;">Main Lagi</button>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup" id="popup">
+            <span class="close" id="closePopup">&times;</span>
+            <div class="popup-content" id="popupContent">
+                <p id="popupMessage">Selamat! Kamu berhasil menebak kata dalam 1 percobaan.</p>
+                <button id="playAgain">Main Lagi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="script.js"></script>
+</body>
+</html>
